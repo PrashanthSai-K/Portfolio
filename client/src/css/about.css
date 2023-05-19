@@ -1,0 +1,143 @@
+.about-container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.about-heading{
+    position: relative;
+    text-align: center;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.underscore{
+
+    height: 5px;
+    width: 80px;
+    background-color: #5ce1e6;
+    color: #5ce1e6;
+    bottom: 0;
+    transform: translateY(-500%);
+    position: absolute;
+}
+.about-heading::after{
+    content: "About Me";
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+    color: rgba(6, 33, 51,0.1);
+
+}
+.about-content{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.about-leftContent{
+    width: 50%;
+    text-align: justify;
+}
+.about-rightContent{
+    /* width:30%; */
+    position: relative;
+}
+
+.details{
+    display: flex;
+    font-size: 17px;
+    height:40px;
+    align-items: center;
+    position: relative;
+}
+
+.details::after{
+    content: "";
+    border-bottom: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+
+.details .left{
+    width: 18%;
+    text-align: end;
+}
+
+.about-rightContent li{
+    list-style: none;
+}
+
+.left-name{
+    font-weight: 600;
+}
+
+.left-name span{
+    color:#33c9ce;
+}
+
+.skills-container{
+    height: 40vh;
+    
+}
+
+.skills-heading{
+    position: relative;
+    text-align: center;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.skills-heading::after{
+    content: "What I Do ";
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+    color: rgba(6, 33, 51,0.1);
+}
+.skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.skill-card{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    align-items: start;
+    justify-content: center;
+    /* border:1px solid black ;  */
+}
+.skill-card li{
+    list-style: none;
+}
+
+.skill-bar{
+    background-color:lightgray ;
+    height: 10px;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.skill-progress{
+    background-color: #33c9ce;
+    height: 10px;
+}

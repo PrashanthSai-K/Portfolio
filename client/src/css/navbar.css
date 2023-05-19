@@ -1,0 +1,48 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #062133;
+    color: white;
+    
+}
+.navlinks{
+    display: flex;
+    gap: 3%;
+    width: 50vw;
+}
+.nav-name{
+    width: 25vw;
+    padding-left: 5%;
+    font-size: xx-large;
+    font-weight: 400;
+    color: #5CE1E6;
+    cursor: pointer;
+}
+.nav-icons{
+    padding-right: 5%;
+    font-size: 15px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all ease-in 0.3s;
+
+}
+
+.navlinks a:hover{
+    color: rgb(26, 185, 185);
+}
+
+.navlinks a:active{
+    transform: scale(0.8);
+}
+
+.navbar-container-2{
+    display: none   ;
+}
