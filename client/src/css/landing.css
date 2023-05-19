@@ -44,7 +44,8 @@
 }
 
 .landing-container {
-  height: 90vh;
+  padding-top: 10vh;
+  height: 100vh;
   width: 100%;
   background-color: #062133;
   color: white;
