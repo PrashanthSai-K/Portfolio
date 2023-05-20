@@ -1,7 +1,10 @@
 .about-container{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     position: relative;
+}
+#aboutme{
+    padding-top: 10vh;
 }
 .about-heading{
     position: relative;
@@ -98,6 +101,7 @@
     align-items: center;
     font-size: 25px;
 }
+
 .skills-heading::after{
     content: "What I Do ";
     position: absolute;
@@ -107,6 +111,7 @@
     font-weight: 900;
     color: rgba(6, 33, 51,0.1);
 }
+
 .skills-content{
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +119,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .skill-card{
     display: flex;
     font-size: 20px;
