@@ -30,15 +30,15 @@ const About = () => {
                 <li>Sai Prashanth K</li>
               </div>
               <div className="details">
-                <li className="left">Email :</li>
+                <li className="left">E-mail :</li>
                 <li style={{ color: "#33c9ce" }}>
                   saiprashanth.cs21@bitsathy.ac.in
                 </li>
               </div>
-              <div className="details">
-                <li className="left">Age :</li>
+              {/* <div className="details">
+                <li className="left">Github :</li>
                 <li>22</li>
-              </div>
+              </div> */}
               <div className="details">
                 <li className="left">From :</li>
                 <li className="right">BIT, Sathy</li>
@@ -53,67 +53,41 @@ const About = () => {
             </div>
             <div className="skills-content">
               <div className="skill-card">
+                <img src="./react.png" alt="" style={{ width: '70%' }} />
                 <li>React</li>
-                <div className="skill-bar">
-                  <div
-                    className="skill-progress"
-                    style={{ width: " 80%" }}
-                  ></div>
-                </div>
+
               </div>
               <div className="skill-card">
+                <img src="./php.png" alt="" style={{ width: '70%' }} />
                 <li>Laravel</li>
-                <div className="skill-bar">
-                  <div
-                    className="skill-progress"
-                    style={{ width: " 80%" }}
-                  ></div>
-                </div>
+
               </div>
               <div className="skill-card">
+                <img src="./nodejs.png" alt="" style={{ width: '70%' }} />
                 <li>Node.js</li>
-                <div className="skill-bar">
-                  <div
-                    className="skill-progress"
-                    style={{ width: " 70%" }}
-                  ></div>
-                </div>
+
               </div>
+
               <div className="skill-card">
+                <img src="./mysql.png" alt="" style={{ width: '70%' }} />
                 <li>MySQL</li>
-                <div className="skill-bar">
-                  <div
-                    className="skill-progress"
-                    style={{ width: " 60%" }}
-                  ></div>
-                </div>
+
               </div>
               <div className="skill-card">
+                <img src="./mongo.png" alt="" style={{ width: '70%' }} />
                 <li>MongoDB</li>
-                <div className="skill-bar">
-                  <div
-                    className="skill-progress"
-                    style={{ width: " 60%" }}
-                  ></div>
-                </div>
+
               </div>
               <div className="skill-card">
+                <img src="./aws.png" alt="" style={{ width: '80%' }} />
                 <li>AWS</li>
-                <div className="skill-bar">
-                  <div
-                    className="skill-progress"
-                    style={{ width: " 40%" }}
-                  ></div>
-                </div>
+
               </div>
               <div className="skill-card">
+
+                <img src="./docker.png" alt="" style={{ width: '70%' }} />
                 <li>Docker</li>
-                <div className="skill-bar">
-                  <div
-                    className="skill-progress"
-                    style={{ width: "50%" }}
-                  ></div>
-                </div>
+
               </div>
             </div>
           </div>
