@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import "../css/landing.css";
 
 const Landing = () => {
-  const texts = ["I am Sai Prashanth K!"];
+  const texts = ["Sai Prashanth K!"];
   let index = 0;
   let textIndex = 0;
 
@@ -39,29 +39,38 @@ const Landing = () => {
 
   return (
     <>
-      <div className="landing-container">
-        <div className="landing-textContainer">
-          <div className="text-first">Welcome!!</div>
+      <section id="home">
+        <div className="landing-container">
+          <div className="landing-textContainer">
+            <div className="text-first">Welcome!!</div>
 
-          <div className="text-container">
-            <span id="typed-text"></span>
+            <div className="text-container">
+              I am <span id="typed-text"></span>
+            </div>
+            <div className="designation">Full Stack Web Developer</div>
+            <pre>&lt;/&gt;</pre>
+            <a className="hire-button hire-button-2" href="#contactme">Hire Me</a>
           </div>
-          <div className="designation">Full Stack Web Developer</div>
-          <pre>&lt;/&gt;</pre>
-          <button className="hire-button hire-button-2">Hire Me</button>
+          <div className="svg-container">
+            <img src="./blob.png" alt="" />
+          </div>
+          <div className="scroll-down">
+            <i className="fas fa-chevron-down"></i>
+          </div>
+          <div className="plusbg1">
+            <img src="./plusbg.png" alt="" />
+          </div>
+          <div className="roundbg1">
+            <img src="./roundbg.png" alt="" />
+          </div>
+          <div className="plusbg2">
+            <img src="./plusbg.png" alt="" />
+          </div>
+          <div className="roundbg2">
+            <img src="./roundbg.png" alt="" />
+          </div>
         </div>
-        <div className="svg-container">
-          <img src="./blob.png" alt="" />
-        </div>
-        <div className="scroll-down">
-          <i className="fas fa-chevron-down"></i>
-        </div>
-        <div className="plusbg1"><img src="./plusbg.png" alt="" /></div>
-        <div className="roundbg1"><img src="./roundbg.png" alt="" /></div>
-        <div className="plusbg2"><img src="./plusbg.png" alt="" /></div>
-        <div className="roundbg2"><img src="./roundbg.png" alt="" /></div>
-      </div>
-     
+      </section>
     </>
   );
 };

@@ -59,7 +59,7 @@ const About = () => {
               </div>
               <div className="skill-card">
                 <img src="./php.png" alt="" style={{ width: '70%' }} />
-                <li>Laravel</li>
+                <li>PHP</li>
 
               </div>
               <div className="skill-card">

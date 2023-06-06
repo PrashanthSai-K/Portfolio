@@ -1,10 +1,11 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import About from "./components/About";
+import Project from "./components/Project";
+import Team from "./components/Team";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -17,6 +18,9 @@ function App() {
         <Landing />
       </section>
       <About />
+      <Project />
+      <Team />
+      <Contact />
     </>
   );
 }

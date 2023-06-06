@@ -16,6 +16,7 @@
 }
 .designation {
   font-size: 30px;
+  
 }
 
 @keyframes typing {
@@ -38,6 +39,7 @@
 }
 
 #typed-text {
+
   border-right: 0.15em solid orange;
   animation: typing 20s steps(40, end),
     blink-caret 0.75s steps(40, end) infinite;
@@ -85,6 +87,8 @@
   font-size: 20px;
   cursor: pointer;
   margin-top: 2%;
+  text-decoration: none;
+  text-align: center;
 }
 
 .hire-button-2 {

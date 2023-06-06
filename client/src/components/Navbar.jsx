@@ -30,10 +30,20 @@ const Navbar = () => {
           <a href="#home">Home</a>
           <a href="#aboutme">About Me</a>
           <a href="#myskills">Skills</a>
-          <a href="/projects">Projects</a>
-          <a href="/contact">Contact</a>
+          <a href="#myprojects">Projects</a>
+          <a href="#contactme">Contact</a>
         </nav>
-        <div className="nav-icons">Github</div>
+        <div className="nav-icons">
+          <a href="https://instagram.com/prashanth_saik" target="blank">
+            <i className="bx bxl-instagram"></i>
+          </a>
+          <a href="https://linkedin.com/in/prashanthsaik" target="blank">
+            <i className="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/PrashanthSai-K" target="blank">
+            <i className="bx bxl-github"></i>
+          </a>
+        </div>
       </div>
     </>
   );
