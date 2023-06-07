@@ -1,0 +1,105 @@
+#myprojects{
+  padding-top: 9vh;
+}
+
+.project-container {
+  height: 100vh;
+  width: 100%;
+}
+.project-heading {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  height: 15vh;
+}
+.project-heading::after {
+  content: "My Works";
+  position: absolute;
+  z-index: -1;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+  color: rgba(6, 33, 51, 0.1);
+}
+
+.grid-container{
+
+    display: flex;
+    gap:20px ;
+    width: 70%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    padding-top: 3%;
+}
+
+.grid{
+    position: relative;
+    overflow: hidden;
+    height: 230px;
+    width: 450px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    background-size:cover;
+    background-position: center;
+    transition:all ease-in 0.3s ;
+
+}
+
+.grid:hover .grid-link{
+   opacity: 1;
+}
+
+.grid:hover{
+  transform: translateY(-4px);
+}
+.grid-link{
+  position: absolute;
+  opacity: 0;
+  /* transform: translate(200%, 200%); */
+  height: 99%;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  z-index: 1000;
+  transition:all ease-in 0.5s ;
+  color:#5ce1e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  filter: drop-shadow(3px 3px 3px 3px #0000);
+}
+
+.grid-link a{
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #5ce1e6;
+  border-radius: 10px;
+  font-size: 12px;
+
+}
+
+
+.grid-1{
+  background-image: url("http://localhost:5173/profoliosite.png");
+}
+
+.grid-2{
+   background-image: url('http://localhost:5173/cloudlabsite.png');
+}
+
+.grid-3{
+  background-image: url('http://localhost:5173/coursesite.png');
+}
+.grid-4{
+  background-image: url("http://localhost:5173/leavesite.png");
+}

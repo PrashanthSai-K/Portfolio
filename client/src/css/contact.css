@@ -83,15 +83,40 @@
 }
 
 
-
-
-/* Media Query */
-
 * {
   padding: 0%;
   margin: 0%;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 4px;
+}
+
+/* * {
+  outline: 1px solid #f00 !important;
+} */
+@media screen and (max-width:500px) {
+
 }
 
 @media screen and (max-width:1000px) {
@@ -198,6 +223,13 @@
   .team-heading::after{
     font-size: 50px;
   }
+  .team-cards{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .team-card{
+    zoom: 0.7;
+  }
   .contact-container{
     height:auto
   }
@@ -210,6 +242,7 @@
     margin-left: 10%;
     padding-bottom: 10%;
   }
+
   .contact-content1{
     width: 100%;
   }

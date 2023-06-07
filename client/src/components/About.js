@@ -53,41 +53,41 @@ const About = () => {
             </div>
             <div className="skills-content">
               <div className="skill-card">
-                <img src="./react.png" alt="" style={{ width: '70%' }} />
+                <img src="./react.png" alt="" style={{ width: "70%" }} />
                 <li>React</li>
-
               </div>
               <div className="skill-card">
-                <img src="./php.png" alt="" style={{ width: '70%' }} />
+                <img src="./php.png" alt="" style={{ width: "70%" }} />
                 <li>PHP</li>
-
               </div>
               <div className="skill-card">
-                <img src="./nodejs.png" alt="" style={{ width: '70%' }} />
+                <img src="./nodejs.png" alt="" style={{ width: "70%" }} />
                 <li>Node.js</li>
-
               </div>
 
               <div className="skill-card">
-                <img src="./mysql.png" alt="" style={{ width: '70%' }} />
+                <img src="./mysql.png" alt="" style={{ width: "70%" }} />
                 <li>MySQL</li>
-
               </div>
               <div className="skill-card">
-                <img src="./mongo.png" alt="" style={{ width: '70%' }} />
+                <img
+                  src="./mongo.png"
+                  alt=""
+                  style={{ width: "80%", marginTop: "17%" }}
+                />
                 <li>MongoDB</li>
-
               </div>
               <div className="skill-card">
-                <img src="./aws.png" alt="" style={{ width: '80%' }} />
+                <img
+                  src="./aws.png"
+                  alt=""
+                  style={{ width: "90px", marginTop: "17%" }}
+                />
                 <li>AWS</li>
-
               </div>
               <div className="skill-card">
-
-                <img src="./docker.png" alt="" style={{ width: '70%' }} />
+                <img src="./docker.png" alt="" style={{ width: "150px" }} />
                 <li>Docker</li>
-
               </div>
             </div>
           </div>
