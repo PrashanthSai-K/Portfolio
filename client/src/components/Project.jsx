@@ -4,47 +4,49 @@ import axios from "axios";
 // import portfolio from '../assets/protfoliosite.png';
 
 const Project = () => {
+  const [data, setData] = useState([]);
 
-  const[data, setData] = useState([]);
-
-  async function fetchData(){
+  async function fetchData() {
     const resp = await axios
-                        .get("http://localhost:3000/api/projects")
-                        .catch((err)=>console.log(err));
-    setData(resp.data)
+      .get("http://localhost:3000/api/projects")
+      .catch((err) => console.log(err));
+    setData(resp.data);
   }
-  useEffect(()=>{
-    fetchData()
-  }, [setData])
+  useEffect(() => {
+    fetchData();
+  }, [setData]);
 
   return (
     <>
-      <section id="myprojects">
-        <div className="project-container">
-          <div className="project-heading">
-            Project <div className="underscore"></div>
-          </div>
-          <div className="grid-container">
-            {data.map((project)=>{
-              return (
-                  <div className="grid" style={{backgroundImage:`url(${project.image})`}} key={project._id}>
+      {data.length == 0 ? (
+        console.log("no data")
+      ) : (
+        <section id="myprojects">
+          <div className="project-container">
+            <div className="project-heading">
+              Project <div className="underscore"></div>
+            </div>
+            <div className="grid-container">
+              {data.map((project) => {
+                return (
+                  <div
+                    className="grid"
+                    style={{ backgroundImage: `url(${project.image})` }}
+                    key={project._id}
+                  >
                     <div className="grid-link">
                       {project.name}
-                      <a
-                        href={project.gitlink}
-                        target="blank"
-                      >
+                      <a href={project.gitlink} target="blank">
                         View
                       </a>
                     </div>
-                  </div>  
-              );
-            })}
-           
-            
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>
   );
 };
