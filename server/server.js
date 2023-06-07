@@ -54,6 +54,6 @@ app.get("/api/projects", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-app.listen(3000, () => console.log("app listening on port 3000"));
+app.listen(5000, () => console.log("app listening on port 5000"));
 
 

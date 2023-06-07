@@ -8,12 +8,11 @@ import Team from "./components/Team";
 import Contact from "./components/Contact";
 
 function App() {
-
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <section  id="home">
+      <section id="home">
         <Navbar />
         <Landing />
       </section>

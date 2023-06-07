@@ -8,7 +8,7 @@ const Project = () => {
 
   async function fetchData() {
     const resp = await axios
-      .get("http://localhost:3000/api/projects")
+      .get("http://localhost:5000/api/projects")
       .catch((err) => console.log(err));
     setData(resp.data);
   }
@@ -18,7 +18,7 @@ const Project = () => {
 
   return (
     <>
-      {data.length == 0 ? (
+      {data.length === 0 ? (
         console.log("no data")
       ) : (
         <section id="myprojects">
