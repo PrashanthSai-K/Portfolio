@@ -9,7 +9,7 @@ const Team = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const resp = await axios.get("http://localhost:5000/api/team");
+        const resp = await axios.get("https://portfolio-9k9g.onrender.com/api/team");
         setData(resp.data);
       } catch (error) {
         console.log(error);
