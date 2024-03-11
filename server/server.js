@@ -15,8 +15,8 @@ const connectParams = {
 }
 
 
-const url =
-  "mongodb+srv://root:abcd1234@anime.tpuvkvi.mongodb.net/Portfolio?retryWrites=true&w=majority";
+const url = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@anime.tpuvkvi.mongodb.net/Portfolio?retryWrites=true&w=majority`
+
 
 const connection = mongoose
   .connect(url, connectParams)
