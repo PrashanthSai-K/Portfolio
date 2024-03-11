@@ -8,7 +8,7 @@ const Project = () => {
 
   async function fetchData() {
     const resp = await axios
-      .get("http://localhost:5000/api/projects")
+      .get("https://portfolio-9k9g.onrender.com/api/projects")
       .catch((err) => console.log(err));
     setData(resp.data);
   }
