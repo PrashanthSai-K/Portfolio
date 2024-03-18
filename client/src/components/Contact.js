@@ -1,7 +1,41 @@
-import React from 'react';
-import '../css/contact.css'
+import React, {useRef, useState} from 'react';
+import '../css/contact.css';
+import emailjs from '@emailjs/browser';
+
+
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const [formData, setFormData] = useState({name: "", email:"", message:""});
+
+  const handleInput =(e)=>{
+    e.preventDefault();
+    setFormData({...formData, [e.target.name] : e.target.value})
+  }
+
+
+
+  const sendEmail= (e)=>{
+    if(formData.name != "" && formData.message != "" && formData.email != ""){
+      emailjs
+      .send('service_i3v39nj', 'template_mdph0oa', formData, {
+        publicKey: 'FVnO9bw4gIeQfVrph',
+      } )
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+    }else{
+      console.log("Data Required");
+    }
+    
+  }
 
   return (
     <>
@@ -50,22 +84,20 @@ const Contact = () => {
               </div>
             </div>
             <div className="contact-content2">
-              <form action="">
+              <form onSubmit={sendEmail}>
                 <div className="input-group">
                   <div className="input-heading">Name :</div>
-                  <input type="text" />
+                  <input type="text" required value={formData.name} onChange={handleInput} name='name'/>
                 </div>
                 <div className="input-group">
                   <div className="input-heading">Email :</div>
-                  <input type="text" />
+                  <input type="text" required value={formData.email} onChange={handleInput} name='email'/>
                 </div>
                 <div className="input-group">
                   <div className="input-heading">Message :</div>
-                  <textarea type="text" />
+                  <textarea type="text" required onChange={handleInput} value={formData.message} name='message'/>
                 </div>
-                <button className="contact-button contact-button-2">
-                  Send
-                </button>
+                <input className="contact-button contact-button-2" style={{textAlign:"center"}} value="Send" onClick={sendEmail} />
               </form>
             </div>
           </div>

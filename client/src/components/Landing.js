@@ -49,7 +49,10 @@ const Landing = () => {
             </div>
             <div className="designation">Full Stack Web Developer</div>
             <pre>&lt;/&gt;</pre>
-            <a className="hire-button hire-button-2" href="#contactme">Hire Me</a>
+            <div className="button-conatiner">
+              <a className="hire-button hire-button-2" href="#contactme">Hire Me</a>
+              <a type="download" className="hire-button hire-button-2" target="blank" href="/resume.pdf">My Resume</a>
+            </div>
           </div>
           <div className="svg-container">
             <img src="./blob.png" alt="" />
