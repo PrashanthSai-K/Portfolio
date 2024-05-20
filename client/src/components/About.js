@@ -17,14 +17,7 @@ const About = () => {
                 I am <span>Sai Prashanth K</span> , Full Stack Web Developer
               </h2>
               <br />
-              I'm a results-driven full-stack web developer with a strong
-              background in AWS hosting and Docker. Leveraging my skills in
-              cloud computing and containerization, I deliver efficient and cost
-              effective web solutions that meet clients' unique needs and exceed
-              their expectations.Passionate about staying up to date with the
-              latest advancements in cloud computing and containerization, I
-              constantly expand my skill set to ensure that my clients benefit
-              from cutting-edge technologies.
+              As a dedicated Full Stack Developer, I excel in delivering products that prioritize exceptional user experience and robust security. My expertise in containerizing applications ensures seamless and efficient deployment processes.My commitment to continuous learning drives me to further enhance my skills in CI/CD and cloud computing, with a particular focus on Jenkins and AWS. I am passionate about leveraging these technologies to streamline development workflows, automate deployment pipelines, and optimize cloud infrastructure for scalability and performance. Through my comprehensive approach, I aim to provide innovative solutions that meet and exceed user expectations while maintaining the highest standards of security and reliability.
             </div>
             <div className="about-rightContent">
               <div className="details">
