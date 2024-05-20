@@ -72,14 +72,14 @@ const About = () => {
                 />
                 <li>MongoDB</li>
               </div>
-              <div className="skill-card">
+           {/*   <div className="skill-card">
                 <img
                   src="./aws.png"
                   alt=""
                   style={{ width: "90px", marginTop: "17%" }}
                 />
                 <li>AWS</li>
-              </div>
+              </div> */ }
               <div className="skill-card">
                 <img src="./docker.png" alt="" style={{ width: "150px" }} />
                 <li>Docker</li>
